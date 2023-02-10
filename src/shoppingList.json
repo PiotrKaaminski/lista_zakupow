@@ -1,0 +1,59 @@
+{
+  "shoppingLists":
+  [
+    {
+      "date": {
+        "year": 2022,
+        "month": 1,
+        "day": 20
+      },
+      "status": "PENDING",
+      "products": [
+        {
+          "name": "masło",
+          "amount": "2 kostki"
+        },
+        {
+          "name": "cukier",
+          "amount": "3 kg"
+        }
+      ]
+    },
+    {
+      "date": {
+        "year": 2023,
+        "month": 2,
+        "day": 22
+      },
+      "status": "PENDING",
+      "products": [
+        {
+          "name": "masło",
+          "amount": "2 kostki"
+        },
+        {
+          "name": "cukier",
+          "amount": "3 kg"
+        }
+      ]
+    },
+    {
+      "date": {
+        "year": 2023,
+        "month": 3,
+        "day": 22
+      },
+      "status": "FINISHED",
+      "products": [
+        {
+          "name": "masło",
+          "amount": "2 kostki"
+        },
+        {
+          "name": "cukier",
+          "amount": "3 kg"
+        }
+      ]
+    }
+  ]
+}
