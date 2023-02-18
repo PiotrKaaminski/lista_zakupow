@@ -2,11 +2,8 @@
   "shoppingLists":
   [
     {
-      "date": {
-        "year": 2022,
-        "month": 1,
-        "day": 20
-      },
+      "id": "1",
+      "date": "01/20/2023",
       "status": "PENDING",
       "products": [
         {
@@ -20,11 +17,8 @@
       ]
     },
     {
-      "date": {
-        "year": 2023,
-        "month": 2,
-        "day": 22
-      },
+      "id": "2",
+      "date": "02/20/2023",
       "status": "PENDING",
       "products": [
         {
@@ -38,11 +32,8 @@
       ]
     },
     {
-      "date": {
-        "year": 2023,
-        "month": 3,
-        "day": 22
-      },
+      "id": "3",
+      "date": "03/20/2023",
       "status": "FINISHED",
       "products": [
         {

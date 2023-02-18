@@ -11,12 +11,10 @@ export default class ShoppingListTile extends Component {
         this.state = {
             mode: "VIEW"
         }
-        console.log(this.shoppingList)
     }
     renderProducts = products => {
         let rows = [];
         for (const element of products) {
-            console.log(element);
             if (this.state.mode === "VIEW") {
                 rows.push(<p>{element.name}: {element.amount}</p>)
             } else if (this.state.mode === "MODIFY") {
@@ -31,9 +29,11 @@ export default class ShoppingListTile extends Component {
         if (this.state.mode === "MODIFY") {
             return classes;
         }
+        let nowTime = new Date().getTime()
+        let tileTime = new Date(this.shoppingList.date).getTime();
         if (this.shoppingList.status === "FINISHED") {
             classes += "accepted";
-        } else if (this.shoppingList.status === "PENDING" && new Date() > new Date(this.shoppingList.date.year, this.shoppingList.date.month, this.shoppingList.date.day)) {
+        } else if (this.shoppingList.status === "PENDING" && nowTime > tileTime) {
             classes += "error";
         }
 
@@ -42,9 +42,9 @@ export default class ShoppingListTile extends Component {
 
     renderDate = date => {
         if (this.state.mode === "VIEW") {
-            return <p>{date.year + "-" + date.month + "-" + date.day}</p>
+            return <p>{date}</p>
         } else if (this.state.mode === "MODIFY") {
-            return <input type="text" defaultValue={date.year + "-" + date.month + "-" + date.day}/>
+            return <input type="text" defaultValue={date}/>
         }
     }
 

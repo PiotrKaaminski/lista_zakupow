@@ -4,3 +4,15 @@
   font-size: 20px;
   color: white;
 }
+
+.shoppingListTile {
+  background-color: #1a1a30;
+}
+
+.accepted {
+  border: green solid 3px;
+}
+
+.error {
+  border: red solid 3px;
+}
